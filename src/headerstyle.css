@@ -1,0 +1,29 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 6rem;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  align-items: center;
+  border-bottom: solid 2px rgba(90, 100, 115);
+}
+
+.title{
+  margin-left: 10rem;
+}
+
+.tabs{
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  font-size: 3.2rem;
+  justify-self: center;
+}
