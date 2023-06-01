@@ -1,6 +1,8 @@
 /* eslint-disable quotes */
 import "./headerstyle.css";
+import "./homestyle.css";
 import burger from './images/burger.svg';
+import { createHomePage } from './home.js';
 
 const content = document.querySelector("#content");
 
@@ -29,3 +31,6 @@ burgerIcon.src = burger;
 burgerIcon.classList.add("burger");
 header.appendChild(burgerIcon);
 content.appendChild(header);
+content.classList.add("content");
+
+createHomePage();
