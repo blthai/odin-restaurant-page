@@ -1,0 +1,9 @@
+.homepage{
+  display: grid;
+  grid-template-columns: 1fr 80rem;
+}
+
+.left-homepage{
+  border: 20px solid #fee7a4;
+  padding: 20px;
+}
