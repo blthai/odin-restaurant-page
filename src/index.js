@@ -1,5 +1,6 @@
 /* eslint-disable quotes */
 import "./headerstyle.css";
+import burger from './images/burger.svg';
 
 const content = document.querySelector("#content");
 
@@ -22,4 +23,9 @@ tabOptions.appendChild(home);
 tabOptions.appendChild(menu);
 tabOptions.appendChild(outline);
 header.appendChild(tabOptions);
+
+const burgerIcon = new Image();
+burgerIcon.src = burger;
+burgerIcon.classList.add("burger");
+header.appendChild(burgerIcon);
 content.appendChild(header);
