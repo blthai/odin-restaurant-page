@@ -1,9 +1,37 @@
 .homepage{
   display: grid;
-  grid-template-columns: 1fr 80rem;
+  grid-template-columns: 2fr 1fr;
 }
 
 .left-homepage{
   border: 20px solid #fee7a4;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 70rem;
+  grid-template-rows: 10rem 10rem 10rem 10rem;
+  align-items: center;
+  align-self: center;
+  margin-left: 12rem;
+}
+
+h2{
+  color: #fee7a4;
+  font-size: 10rem;
+  margin: 0;
+  justify-self: center;
+}
+
+button{
+  background-color: #AB7E4F;
+  border: solid 1px black;
+  border-radius: 12px;
+  height: 4rem;
+  width: 15rem;
+  color: black;
+  margin-left: 4rem;
+}
+
+.description{
+  color: #f3eacd;
+  font-size: 2.4rem;
 }
