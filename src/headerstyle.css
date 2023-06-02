@@ -53,6 +53,11 @@ h1{
   margin-left: 3rem;
 }
 
+.tabs div:hover{
+  text-decoration:underline wavy;
+  cursor: pointer;
+}
+
 .burger{
   padding-top: 1rem;
   height: 15rem;
