@@ -1,6 +1,7 @@
 /* eslint-disable quotes */
 
 import bacon from './images/baconburger.jpg';
+import fry from './images/crinklefry.svg';
 
 const content = document.querySelector("#content");
 
@@ -10,8 +11,12 @@ const createHomePage = () => {
   const leftHomePage = document.createElement("div");
   leftHomePage.classList.add("left-homepage");
 
-  //const homePageDescription = document.createElement("h2");
-  //homePageDescription.textContent = "Thick and Juicy";
+  const crinkleFryLeft = new Image();
+  crinkleFryLeft.src = fry;
+  crinkleFryLeft.classList.add("left-fry");
+  leftHomePage.appendChild(crinkleFryLeft);
+
+  const homePageDescription = document.createElement("div");
   const descriptionTitle = document.createElement("h2");
   descriptionTitle.textContent = ("Thick, Juicy, and CHARBROILED");
   const description = document.createElement("div");
@@ -19,10 +24,16 @@ const createHomePage = () => {
   description.textContent = "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
   const locationButton = document.createElement("button");
   locationButton.textContent = "Find a Location";
-  //leftHomePage.appendChild(homePageDescription);
-  leftHomePage.appendChild(descriptionTitle);
-  leftHomePage.appendChild(description);
-  leftHomePage.appendChild(locationButton);
+  homePageDescription.appendChild(descriptionTitle);
+  homePageDescription.appendChild(description);
+  homePageDescription.appendChild(locationButton);
+  homePageDescription.classList.add("home-page-text");
+  leftHomePage.appendChild(homePageDescription);
+
+  const crinkleFryRight = new Image();
+  crinkleFryRight.src = fry;
+  crinkleFryRight.classList.add("right-fry");
+  leftHomePage.appendChild(crinkleFryRight);
 
   const rightHomePage = document.createElement("div");
   rightHomePage.classList.add("right-homepage");
@@ -31,6 +42,8 @@ const createHomePage = () => {
   baconBurger.src = bacon;
   baconBurger.classList.add("bacon-burger");
   rightHomePage.appendChild(baconBurger);
+
+  
 
   homePage.appendChild(leftHomePage);
   homePage.appendChild(rightHomePage);
