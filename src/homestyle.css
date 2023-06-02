@@ -50,6 +50,14 @@ button{
   font-family: 'Darumadrop One', cursive;
 }
 
+button:hover{
+  background-color: #946f44;
+}
+
+button:active{
+  background-color: #7c5d39;
+}
+
 .description{
   color: #f3eacd;
   font-size: 2.4rem;
