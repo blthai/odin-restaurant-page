@@ -1,15 +1,16 @@
 /* eslint-disable quotes */
 
-import bacon from './images/baconburger.jpg';
-import fry from './images/crinklefry.svg';
-
-
+import bacon from "./images/baconburger.jpg";
+import fry from "./images/crinklefry.svg";
 
 const content = document.querySelector("#content");
 
 const createHomePage = () => {
+  if (content.children.length > 1) {
+    content.removeChild(content.firstChild.nextSibling);
+  }
   const homePage = document.createElement("div");
-  homePage.classList.add("homepage")
+  homePage.classList.add("home-page");
   const leftHomePage = document.createElement("div");
   leftHomePage.classList.add("left-homepage");
 
@@ -20,10 +21,11 @@ const createHomePage = () => {
 
   const homePageDescription = document.createElement("div");
   const descriptionTitle = document.createElement("h2");
-  descriptionTitle.textContent = ("Thick, Juicy, and CHARBROILED!");
+  descriptionTitle.textContent = "Thick, Juicy, and CHARBROILED!";
   const description = document.createElement("div");
   description.classList.add("description");
-  description.textContent = "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
+  description.textContent =
+    "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
   const locationButton = document.createElement("button");
   locationButton.textContent = "Find a Location";
   homePageDescription.appendChild(descriptionTitle);
@@ -48,7 +50,6 @@ const createHomePage = () => {
   homePage.appendChild(leftHomePage);
   homePage.appendChild(rightHomePage);
   content.appendChild(homePage);
-
 };
 
 export { createHomePage };
