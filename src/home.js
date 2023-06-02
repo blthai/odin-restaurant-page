@@ -3,6 +3,8 @@
 import bacon from './images/baconburger.jpg';
 import fry from './images/crinklefry.svg';
 
+
+
 const content = document.querySelector("#content");
 
 const createHomePage = () => {
@@ -18,7 +20,7 @@ const createHomePage = () => {
 
   const homePageDescription = document.createElement("div");
   const descriptionTitle = document.createElement("h2");
-  descriptionTitle.textContent = ("Thick, Juicy, and CHARBROILED");
+  descriptionTitle.textContent = ("Thick, Juicy, and CHARBROILED!");
   const description = document.createElement("div");
   description.classList.add("description");
   description.textContent = "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
@@ -42,8 +44,6 @@ const createHomePage = () => {
   baconBurger.src = bacon;
   baconBurger.classList.add("bacon-burger");
   rightHomePage.appendChild(baconBurger);
-
-  
 
   homePage.appendChild(leftHomePage);
   homePage.appendChild(rightHomePage);
