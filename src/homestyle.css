@@ -69,13 +69,13 @@ button{
 .left-fry{
   position: relative;
   right: 8rem;
-  height: 50rem;
+  height: 20rem;
   width: 50rem;
 }
 
 .right-fry{
   position: relative;
-  left: 24rem;
-  height: 50rem;
+  left: 27rem;
+  height: 20rem;
   width: 50rem;
 }
