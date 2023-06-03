@@ -1,23 +1,32 @@
 .item-photo{
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 32px;
+  border: none;
 }
 
 .item-info{
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   color: #284724;
   border-radius: 32px;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-content: center;
   background-color: #fee7a4;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.item-description{
+  width: 80%;
 }
 
 .menu-entry{
+  background-color: #fee7a4;
+  border-radius: 32px;
 }
 
 .menu-entries{
