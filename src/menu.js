@@ -23,6 +23,7 @@ const createMenuPage = () => {
   friesTitle.textContent = "Fries - $3";
   const friesDescription = document.createElement("div");
   friesDescription.textContent = "Fresh sliced potatoes that have been fried to golden perfection.";
+  friesDescription.classList.add("item-description");
   const friesInfo = document.createElement("div");
   friesInfo.appendChild(friesTitle);
   friesInfo.appendChild(friesDescription);
@@ -40,6 +41,7 @@ const createMenuPage = () => {
   nachoBurgerTitle.textContent = "Nacho Burger - $6";
   const nachoBurgerDescription = document.createElement("div");
   nachoBurgerDescription.textContent = "Charbroiled beef burger topped with nacho cheese for an ooey-gooey texture sensation.";
+  nachoBurgerDescription.classList.add("item-description");
   const nachoBurgerInfo = document.createElement("div");
   nachoBurgerInfo.appendChild(nachoBurgerTitle);
   nachoBurgerInfo.appendChild(nachoBurgerDescription);
@@ -57,6 +59,7 @@ const createMenuPage = () => {
   spicyBurgerTitle.textContent = "Spicy Nacho Burger - $7";
   const spicyBurgerDescription = document.createElement("div");
   spicyBurgerDescription.textContent = "Charbroiled beef burger topped with nacho cheese and habanero peppers for an ooey-gooey texture sensation with a spicy kick.";
+  spicyBurgerDescription.classList.add("item-description");
   const spicyBurgerInfo = document.createElement("div");
   spicyBurgerInfo.appendChild(spicyBurgerTitle);
   spicyBurgerInfo.appendChild(spicyBurgerDescription);
@@ -71,9 +74,10 @@ const createMenuPage = () => {
   milkTea.classList.add("item-photo");
 
   const milkTeaTitle = document.createElement("div");
-  milkTeaTitle.textContent = "milkTea - $4";
+  milkTeaTitle.textContent = "Thai Milk Tea - $4";
   const milkTeaDescription = document.createElement("div");
   milkTeaDescription.textContent = "Refreshing and sweet Thai milk tea with chewy boba pearls.";
+  milkTeaDescription.classList.add("item-description");
   const milkTeaInfo = document.createElement("div");
   milkTeaInfo.appendChild(milkTeaTitle);
   milkTeaInfo.appendChild(milkTeaDescription);
@@ -91,6 +95,7 @@ const createMenuPage = () => {
   cheeseBurgerTitle.textContent = "Cheese Burger - $5";
   const cheeseBurgerDescription = document.createElement("div");
   cheeseBurgerDescription.textContent = "Classic charbroiled beef burger topped with a slice of American cheese.";
+  cheeseBurgerDescription.classList.add("item-description");
   const cheeseBurgerInfo = document.createElement("div");
   cheeseBurgerInfo.appendChild(cheeseBurgerTitle);
   cheeseBurgerInfo.appendChild(cheeseBurgerDescription);
@@ -100,12 +105,16 @@ const createMenuPage = () => {
   cheeseBurgerMenuEntry.appendChild(cheeseBurgerInfo);
   cheeseBurgerMenuEntry.classList.add("menu-entry");
 
-  menuPage.appendChild(friesMenuEntry);
-  menuPage.appendChild(nachoBurgerMenuEntry);
-  menuPage.appendChild(spicyBurgerMenuEntry);
-  menuPage.appendChild(milkTeaMenuEntry);
-  menuPage.appendChild(cheeseBurgerMenuEntry);
+  const menuEntries = document.createElement("div");
 
+  menuEntries.appendChild(cheeseBurgerMenuEntry);
+  menuEntries.appendChild(nachoBurgerMenuEntry);
+  menuEntries.appendChild(spicyBurgerMenuEntry);
+  menuEntries.appendChild(friesMenuEntry);
+  menuEntries.appendChild(milkTeaMenuEntry);
+  
+  menuEntries.classList.add("menu-entries");
+  menuPage.appendChild(menuEntries);
   content.appendChild(menuPage);
 };
 
