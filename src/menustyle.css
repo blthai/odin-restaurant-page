@@ -1,0 +1,21 @@
+.item-photo{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 32px;
+}
+
+.item-info{
+  width: 20rem;
+  height: 20rem;
+  color: #284724;
+  border-radius: 32px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fee7a4;
+  text-align: center;
+}
+
+.menu-entry{
+}
