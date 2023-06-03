@@ -18,10 +18,12 @@
   background-color: #fee7a4;
   text-align: center;
   flex-wrap: wrap;
+  gap: 3.2rem;
 }
 
 .item-description{
   width: 80%;
+  align-self: flex-end;
 }
 
 .menu-entry{
