@@ -12,6 +12,7 @@ const createMenuPage = () => {
   const menuPage = document.createElement("div");
   menuPage.classList.add("menu-page");
   const menuTitle = document.createElement("h2");
+  menuTitle.classList.add("menu-title");
   menuTitle.textContent = "Menu";
   menuPage.appendChild(menuTitle);
 
