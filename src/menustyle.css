@@ -36,3 +36,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
+
+.menu-title{
+  margin-left: 8rem;
+  
+}
