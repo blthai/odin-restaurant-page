@@ -1,8 +1,10 @@
 /* eslint-disable quotes */
 import "./headerstyle.css";
 import "./homestyle.css";
+import "./menustyle.css";
 import burger from './images/burger.svg';
 import { createHomePage } from './home.js';
+import { createMenuPage } from './menu.js';
 
 const content = document.querySelector("#content");
 
@@ -18,7 +20,7 @@ home.textContent = "Home";
 const menu = document.createElement("div");
 menu.textContent = "Menu";
 const outline = document.createElement("div");
-outline.textContent = "Outline";
+outline.textContent = "Contact";
 const tabOptions = document.createElement("div");
 tabOptions.classList.add("tabs");
 tabOptions.appendChild(home);
@@ -34,3 +36,4 @@ content.appendChild(header);
 content.classList.add("content");
 
 createHomePage();
+createMenuPage();
