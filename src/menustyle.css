@@ -40,7 +40,9 @@
   margin-top: 2rem;
 }
 
-.menu-title{
+h2{
+  color: #fee7a4;
+  font-size: 9rem;
+  margin: 0;
   margin-left: 8rem;
-  
 }
