@@ -10,14 +10,19 @@ const createContactPage = () => {
   contactPage.appendChild(contactTitle);
 
   const contactBox = document.createElement("div");
+  contactBox.classList.add("contact-box");
   const contactName = document.createElement("div");
+  contactName.textContent="Chef May";
+  contactName.classList.add("contact-name");
   const contactInfo = document.createElement("div");
+  contactInfo.classList.add("contact-info");
   const contactNumber = document.createElement("div");
-  contactNumber.textContent = "999-999-3333";
+  contactNumber.textContent = "Call: 999-999-3333";
   const contactEmail = document.createElement("div");
-  contactEmail.textContent = "chefmay@emailsite.com";
-  contactInfo.appendChild(contactName);
+  contactEmail.textContent = "Email: chefmay@emailsite.com";
+  contactInfo.appendChild(contactNumber);
   contactInfo.appendChild(contactEmail);
+  contactBox.appendChild(contactName);
   contactBox.appendChild(contactInfo);
   contactPage.appendChild(contactBox);
   content.insertBefore(contactPage, content.lastChild);
