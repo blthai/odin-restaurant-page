@@ -3,9 +3,9 @@ import "./headerstyle.css";
 import "./homestyle.css";
 import "./menustyle.css";
 import "./footerstyle.css";
-import burger from './images/burger.svg';
-import { createHomePage } from './home.js';
-import { createMenuPage } from './menu.js';
+import burger from "./images/burger.svg";
+import { createHomePage } from "./home.js";
+import { createMenuPage } from "./menu.js";
 
 const content = document.querySelector("#content");
 
@@ -38,9 +38,16 @@ content.classList.add("content");
 
 const footer = document.createElement("div");
 footer.classList.add("footer");
+const iconCredit = document.createElement("a");
+iconCredit.textContent = "Burger icon in the header was created by Yeoul Kwon from Noun Project";
+iconCredit.href = "https://thenounproject.com/icon/burger-1044110/";
+footer.appendChild(iconCredit);
+const imagesCredit = document.createElement("a");
+imagesCredit.textContent = "Burger chef image and all menu images were created by Catalyststuff from Freepik";
+imagesCredit.href = "https://www.freepik.com/author/catalyststuff";
+footer.appendChild(imagesCredit);
+
 content.appendChild(footer);
 
 createHomePage();
 createMenuPage();
-
-
