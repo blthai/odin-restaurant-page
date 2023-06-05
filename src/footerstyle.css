@@ -1,0 +1,11 @@
+.footer{
+  background-color: #284724;
+  height: 10rem;
+  border-top: solid 2px #fee7a4;
+}
+
+.footer a{
+  font-size: 3.2rem;
+  color: #fee7a4;
+  text-decoration: none;
+}
