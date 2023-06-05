@@ -113,10 +113,9 @@ const createMenuPage = () => {
   menuEntries.appendChild(spicyBurgerMenuEntry);
   menuEntries.appendChild(friesMenuEntry);
   menuEntries.appendChild(milkTeaMenuEntry);
-  
   menuEntries.classList.add("menu-entries");
   menuPage.appendChild(menuEntries);
-  content.appendChild(menuPage);
+  content.insertBefore(menuPage, content.lastChild);
 };
 
 export { createMenuPage };
