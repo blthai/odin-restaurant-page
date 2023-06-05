@@ -2,6 +2,7 @@
 import "./headerstyle.css";
 import "./homestyle.css";
 import "./menustyle.css";
+import "./footerstyle.css";
 import burger from './images/burger.svg';
 import { createHomePage } from './home.js';
 import { createMenuPage } from './menu.js';
@@ -35,5 +36,11 @@ header.appendChild(burgerIcon);
 content.appendChild(header);
 content.classList.add("content");
 
+const footer = document.createElement("div");
+footer.classList.add("footer");
+content.appendChild(footer);
+
 createHomePage();
 createMenuPage();
+
+
