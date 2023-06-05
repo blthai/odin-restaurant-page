@@ -3,9 +3,11 @@ import "./headerstyle.css";
 import "./homestyle.css";
 import "./menustyle.css";
 import "./footerstyle.css";
+import "./contactstyle.css";
 import burger from "./images/burger.svg";
 import { createHomePage } from "./home.js";
 import { createMenuPage } from "./menu.js";
+import { createContactPage } from "./contact.js";
 
 const content = document.querySelector("#content");
 
@@ -51,3 +53,4 @@ content.appendChild(footer);
 
 createHomePage();
 createMenuPage();
+createContactPage();
