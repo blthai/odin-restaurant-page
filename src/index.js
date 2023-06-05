@@ -20,15 +20,18 @@ header.appendChild(title);
 
 const home = document.createElement("div");
 home.textContent = "Home";
+home.addEventListener("click", createHomePage);
 const menu = document.createElement("div");
 menu.textContent = "Menu";
-const outline = document.createElement("div");
-outline.textContent = "Contact";
+menu.addEventListener("click", createMenuPage);
+const contact = document.createElement("div");
+contact.textContent = "Contact";
+contact.addEventListener("click", createContactPage);
 const tabOptions = document.createElement("div");
 tabOptions.classList.add("tabs");
 tabOptions.appendChild(home);
 tabOptions.appendChild(menu);
-tabOptions.appendChild(outline);
+tabOptions.appendChild(contact);
 header.appendChild(tabOptions);
 
 const burgerIcon = new Image();
@@ -52,5 +55,3 @@ footer.appendChild(imagesCredit);
 content.appendChild(footer);
 
 createHomePage();
-createMenuPage();
-createContactPage();
