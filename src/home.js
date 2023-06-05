@@ -2,11 +2,12 @@
 
 import bacon from "./images/baconburger.jpg";
 import fry from "./images/crinklefry.svg";
+import burgerChefSource from "./images/burgerchef.svg";
 
 const content = document.querySelector("#content");
 
 const createHomePage = () => {
-  if (content.children.length > 1) {
+  if (content.children.length > 2) {
     content.removeChild(content.firstChild.nextSibling);
   }
   const homePage = document.createElement("div");
@@ -24,8 +25,7 @@ const createHomePage = () => {
   descriptionTitle.textContent = "Thick, Juicy, and CHARBROILED!";
   const description = document.createElement("div");
   description.classList.add("description");
-  description.textContent =
-    "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
+  description.textContent = "Mouth-watering burgers made from only the finest ingredients available to us from our supply chain of over a dozen organic vendors.";
   const locationButton = document.createElement("button");
   locationButton.textContent = "Find a Location";
   homePageDescription.appendChild(descriptionTitle);
@@ -42,14 +42,14 @@ const createHomePage = () => {
   const rightHomePage = document.createElement("div");
   rightHomePage.classList.add("right-homepage");
 
-  const baconBurger = new Image();
-  baconBurger.src = bacon;
-  baconBurger.classList.add("bacon-burger");
-  rightHomePage.appendChild(baconBurger);
+  const burgerChef = new Image();
+  burgerChef.src = burgerChefSource;
+  burgerChef.classList.add("bacon-burger");
+  rightHomePage.appendChild(burgerChef);
 
   homePage.appendChild(leftHomePage);
   homePage.appendChild(rightHomePage);
-  content.appendChild(homePage);
+  content.insertBefore(homePage, content.lastChild);
 };
 
 export { createHomePage };
