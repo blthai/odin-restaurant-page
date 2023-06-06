@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   font-family: "Darumadrop One", cursive;
+  height: 100%;
 }
 
 h1,
@@ -17,6 +18,7 @@ h2 {
 }
 
 body {
+  height: 100%;
   margin: 0;
   background-color: #284724;
   background-color: #284724;
@@ -28,8 +30,9 @@ h1 {
 }
 
 .content {
+  min-height: 100%;
   display: grid;
-  grid-template-rows: 15rem 100rem 10rem;
+  grid-template-rows: auto 1fr auto;
 }
 
 .header {
